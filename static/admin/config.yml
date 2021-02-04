@@ -1,6 +1,9 @@
 backend:
   name: github
+  # specify your github repo
   repo: mausic/gatsby-netlify-sample
+  # lets store all changes related to our publishing activity in a corresponding git-branch
+  branch: publishing
 # specify our media storage folder (for images)
 media_folder: content/assets
 # specify path to stored media in PUBLISHED website
@@ -15,7 +18,7 @@ collections:
     # allow user to create new articles
     create: true
     # slug
-    slug: "news/{{year}}-{{month}}-{{day}}-{{slug}}" # {{slug}} - by default is a url-friendly version of 'title' field below
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # {{slug}} - by default is a url-friendly version of 'title' field below
     # fields for each news article
     fields:
       - { name: title, label: Title }
