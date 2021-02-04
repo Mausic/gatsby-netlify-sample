@@ -1,6 +1,6 @@
 ---
 title: Hello world
-excerpt: This is our first news article
+excerpt: This is our first news article!
 date: 2021-02-04T11:34:27.827Z
 ---
 # Hello people!
