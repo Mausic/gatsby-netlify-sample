@@ -17,16 +17,17 @@ jobs:
       - uses: actions/checkout@v2
       # make sure that node.js version is correspond to Netlify CMS requirements
       - name: Set Node.js version
-      - uses: actions/setup-node@master
+        uses: actions/setup-node@master
         with:
           node-version: "12"
       # install dependencies
       - name: Install dependencies
-      - run: yarn install --prod --pure-lockfile
+        run: yarn install --prod --pure-lockfile
       # build Gatsby website
       - name: Build
-      - run: yarn build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+        run: yarn build
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_GATSBY_NETLIFYCMS_FIREBASE }}"
@@ -39,7 +40,7 @@ jobs:
       # OPTIONAL. Comment if unneeded.
       # Create a Pull Request to main branch with updates from Netlify CMS
       - name: PR to main
-      - uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v3
         with:
           branch: main
           delete-branch: false
