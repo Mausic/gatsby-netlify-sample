@@ -42,6 +42,7 @@ jobs:
       - name: PR to main
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: main
+          branch: publishing
+          base: main
           delete-branch: false
           title: "[PUBLISHING] news update"
