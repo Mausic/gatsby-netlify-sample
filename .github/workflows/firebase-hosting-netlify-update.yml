@@ -31,6 +31,7 @@ jobs:
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_GATSBY_NETLIFYCMS_FIREBASE }}"
+          channelId: news
           # IMPORTANT!!!! Update this line to your Firebase PROJECT ID
           projectId: gatsby-netlifycms-firebase
         env:
