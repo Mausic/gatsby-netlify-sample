@@ -44,7 +44,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_title: "Updating News with ${{ github.ref }}"
           pr_body: "
-            :fire: Visit the preview URL for this PR :fire:\
+            :fire: Visit the preview URL for this PR :fire:
+
             [${{ steps.firebase.outputs.details_url }}](${{ steps.firebase.outputs.details_url }})\
+            
             *expires: ${{ steps.firebase.outputs.expire_time }}*
           "
