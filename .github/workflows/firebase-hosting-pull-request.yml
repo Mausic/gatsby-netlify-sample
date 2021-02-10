@@ -1,0 +1,33 @@
+# This GitHub Action builds and deploy gatsby website to
+# Firebase hosting (staging channel) for every PR to 'main' branch
+name: Deploy to Firebase Hosting (staging) on PR
+"on":
+  pull_request:
+    branches:
+      - main
+jobs:
+  build_and_preview:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout code from our repo
+      - uses: actions/checkout@v2
+      # make sure that node.js version is correspond to Netlify CMS requirements
+      - name: Set Node.js version
+        uses: actions/setup-node@master
+        with:
+          node-version: "12"
+      # install dependencies
+      - name: Install dependencies
+        run: yarn install --prod --pure-lockfile
+      # build Gatsby website
+      - name: Build
+        run: yarn build
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_GATSBY_NETLIFYCMS_FIREBASE }}"
+          # IMPORTANT!!!! Update this line to your Firebase PROJECT ID
+          projectId: gatsby-netlifycms-firebase
+        env:
+          FIREBASE_CLI_PREVIEWS: hostingchannels
