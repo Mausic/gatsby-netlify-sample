@@ -1,4 +1,4 @@
-![Deploy to Firebase (staging) on PR](https://github.com/mausic/gatsby-netlify-sample/workflows/.github/workflows/firebase-hosting-pull-request.yml/badge.svg)
+![Deploy to Firebase (staging) on PR](https://github.com/Mausic/gatsby-netlify-sample/workflows/.github/workflows/firebase-hosting-pull-request.yml/badge.svg)
 ![Deploy to Firebase (live) on merge](https://github.com/mausic/gatsby-netlify-sample/workflows/.github/workflows/firebase-hosting-merge.yml/badge.svg)
 ![PR to main on Netlify CMS updates](https://github.com/mausic/gatsby-netlify-sample/workflows/.github/workflows/firebase-hosting-netlify-update.yml/badge.svg)
 
