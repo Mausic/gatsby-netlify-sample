@@ -3,13 +3,13 @@
  * all news articles and render them
  * as list
  */
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import NewsArticle from "./news-article"
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import NewsArticle from "./news-article";
 
 const NewsList = () => {
-  const data = useStaticQuery(newsQuery)
-  const news = data.allMdx.edges
+  const data = useStaticQuery(newsQuery);
+  const news = data.allMdx.edges;
   return (
     <>
       <h1>News</h1>
@@ -23,8 +23,8 @@ const NewsList = () => {
         />
       ))}
     </>
-  )
-}
+  );
+};
 
 const newsQuery = graphql`
   query {
@@ -42,6 +42,6 @@ const newsQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default NewsList
+export default NewsList;
