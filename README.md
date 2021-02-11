@@ -1,99 +1,27 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
+![PR to main on Netlify CMS updates](https://github.com/mausic/gatsby-netlify-sample/workflows/Create%20pull%20request%20to%20'main'%20on%20push%20to%20'publishing'/badge.svg)
+![Deploy to Firebase (staging) on PR](<https://github.com/mausic/gatsby-netlify-sample/workflows/Deploy%20to%20Firebase%20Hosting%20(staging)%20on%20PR/badge.svg>)
+![Deploy to Firebase (live) on merge](<https://github.com/mausic/gatsby-netlify-sample/workflows/Deploy%20to%20Firebase%20Hosting%20(live)%20on%20merge/badge.svg>)
+
+<p align="center" style="background-color: black">
+  <span style="padding-right: 10px">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
+  </span>
+  <span style="padding-right: 10px">
+  <a href="https://www.netlifycms.org/">
+    <img alt="Netlify CMS" src="https://d33wubrfki0l68.cloudfront.net/1f4ce04369d08e4f8c3a7ca30a11c4873fda2ae1/3cf4e/static/netlify-cms-logo-5a5d3304b7d2d77ea281363a71dcc970.svg" height="60" />
+  </a>
+  </span>
+  <a href="https://firebase.google.com/">
+    <svg height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><defs><linearGradient id="d" x1="-108.63" y1="-692.24" x2="-58.56" y2="-742.31" gradientTransform="matrix(2.67 0 0 -2.67 317.23 -1808)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity=".1"></stop><stop offset="1" stop-color="#fff" stop-opacity="0"></stop></linearGradient><linearGradient id="b" x1="56.9" y1="102.54" x2="48.9" y2="98.36" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a52714"></stop><stop offset=".4" stop-color="#a52714" stop-opacity=".5"></stop><stop offset=".8" stop-color="#a52714" stop-opacity="0"></stop></linearGradient><linearGradient id="c" x1="90.89" y1="90.91" x2="87.31" y2="87.33" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a52714" stop-opacity=".8"></stop><stop offset=".5" stop-color="#a52714" stop-opacity=".21"></stop><stop offset="1" stop-color="#a52714" stop-opacity="0"></stop></linearGradient><clipPath id="a"><path d="M143.41 47.34a4 4 0 00-6.77-2.16L115.88 66 99.54 34.89a4 4 0 00-7.08 0l-8.93 17-22.4-41.77a4 4 0 00-7.48 1.28L32 150l57.9 32.46a12 12 0 0011.7 0L160 150z"></path></clipPath></defs><g clip-path="url(#a)"><path d="M32 150L53.66 11.39a4 4 0 017.48-1.27l22.4 41.78 8.93-17a4 4 0 017.08 0L160 150z" fill="#ffa000"></path><path opacity=".12" fill="url(#b)" d="M106 9L0 0v192l32-42L106 9z"></path><path d="M106.83 96.01l-23.3-44.12L32 150l74.83-53.99z" fill="#f57c00"></path><path opacity=".2" fill="url(#c)" d="M0 0h192v192H0z"></path><path d="M160 150L143.41 47.34a4 4 0 00-6.77-2.16L32 150l57.9 32.47a12 12 0 0011.7 0z" fill="#ffca28"></path><path d="M143.41 47.34a4 4 0 00-6.77-2.16L115.88 66 99.54 34.89a4 4 0 00-7.08 0l-8.93 17-22.4-41.77a4 4 0 00-7.48 1.28L32 150h-.08l.07.08.57.28L115.83 67l20.78-20.8a4 4 0 016.78 2.16l16.45 101.74.16-.1zM32.19 149.81L53.66 12.39a4 4 0 017.48-1.28l22.4 41.78 8.93-17a4 4 0 017.08 0l16 30.43z" fill="#fff" fill-opacity=".2"></path><path d="M101.6 181.49a12 12 0 01-11.7 0l-57.76-32.4-.14.91 57.9 32.46a12 12 0 0011.7 0L160 150l-.15-.92z" style="isolation:isolate" fill="#a52714" opacity=".2"></path><path d="M143.41 47.34a4 4 0 00-6.77-2.16L115.88 66 99.54 34.89a4 4 0 00-7.08 0l-8.93 17-22.4-41.77a4 4 0 00-7.48 1.28L32 150l57.9 32.46a12 12 0 0011.7 0L160 150z" fill="url(#d)"></path></g></svg>
+  </a>
 </p>
+
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby.js + Netlify CMS + Firebase
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+The content of this repository is a source code for [Gatsby.js + Netlify CMS + Firebase](https://ryndia.me/gatsby-js-netlify-cms-firebase-hosting) article, where I explain how to install Netlify CMS to an existing Gatsby website (as example I use clean Gatsby.js project without templates), host it at Firebase and implement continuous delivery with GitHub Actions.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
-
-## 🚀 Quick start
-
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the default starter.
-
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
-
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+_You can also use this repo as yet another Gatsby + Netlify CMS blog starter template. But I would recommend to use the one from official docs: [https://github.com/netlify-templates/gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms)_

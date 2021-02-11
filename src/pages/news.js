@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import NewsList from "../components/news/news-list"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import NewsList from "../components/news/news-list";
 
 const NewsPage = () => (
   <Layout>
@@ -12,6 +12,6 @@ const NewsPage = () => (
     <hr />
     <Link to="/">Go Home</Link> <br />
   </Layout>
-)
+);
 
-export default NewsPage
+export default NewsPage;

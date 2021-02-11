@@ -2,9 +2,9 @@
  * This is a react component to render
  * single news article entry
  */
-import React from "react"
-import { Link } from "gatsby"
-import Moment from "react-moment"
+import React from "react";
+import { Link } from "gatsby";
+import Moment from "react-moment";
 
 const NewsArticle = ({ title, excerpt, slug, date }) => (
   <>
@@ -14,6 +14,6 @@ const NewsArticle = ({ title, excerpt, slug, date }) => (
     <p>{excerpt}</p>
     <Link to={slug}>read more...</Link>
   </>
-)
+);
 
-export default NewsArticle
+export default NewsArticle;

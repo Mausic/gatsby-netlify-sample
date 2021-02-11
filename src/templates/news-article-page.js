@@ -1,16 +1,16 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Moment from "react-moment"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Moment from "react-moment";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const NewsArticleTemplate = ({ data }) => {
   const {
     body,
     frontmatter: { title, excerpt, date },
-  } = data.mdx
+  } = data.mdx;
   return (
     <Layout>
       <SEO title={`News | ${title}`} description={excerpt} />
@@ -23,8 +23,8 @@ const NewsArticleTemplate = ({ data }) => {
       <br />
       <Link to="/">Go Home</Link>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query NewsArticle($slug: String!) {
@@ -37,6 +37,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default NewsArticleTemplate
+export default NewsArticleTemplate;
