@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby with Netlify CMS`,
+    description: `Install Netlify CMS to an existing Gatsby website to extend it's possibilities in editing and content management`,
+    author: `Maksym Ryndia`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
